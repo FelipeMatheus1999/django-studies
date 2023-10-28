@@ -1,0 +1,21 @@
+# ENV
+.env
+
+# VENV
+venv
+
+# SQLITE
+.sqlite3
+
+# MAKEFILE
+makefile
+
+# PYTHON
+__pycache__
+*.pyc
+
+
+# REQUIREMENTS
+dev.txt
+prod.txt
+test.txt
