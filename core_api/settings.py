@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+AUTH_USER_MODEL = 'account.AccountModel'
+
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
@@ -28,7 +30,9 @@ THIRD_APPS = [
     'rest_framework.authtoken',
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+  'apps.account'
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + LOCAL_APPS
 
