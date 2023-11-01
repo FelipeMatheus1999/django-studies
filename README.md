@@ -38,6 +38,6 @@
 > ```
 > sudo apt update
 > sudo apt upgrade
-> sudo apt instal make
+> sudo apt install make
 > ```
 > Outo problema que pode acontecer é você não possuir o plugin do ***docker compose***, se olhar no arquivo ***Makefile*** todos os comandos do docker não usando o ```-``` para uniar as duas palavras, isso acontece pois o plugin do ***docker compose*** facilita a nossa escrita.
