@@ -8,7 +8,10 @@ down:
 	sudo docker compose down
 
 build:
-	sudo docker compose build
+	export DOCKER_BUILDKIT=1; sudo docker compose build
+
+build-no-cache:
+	export DOCKER_BUILDKIT=1; sudo docker compose build --no-cache
 
 app:
 	django-admin startapp $(name)
@@ -35,3 +38,6 @@ bash:
 
 shell:
 	sudo docker compose run app $(PYTHON_COMMAND) shell
+
+superuser:
+	sudo docker compose run app $(PYTHON_COMMAND) createsuperuser
