@@ -7,22 +7,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('account', '0001_initial'),
+        ("account", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='accountmodel',
-            name='picture',
+            model_name="accountmodel",
+            name="picture",
             field=models.ImageField(
-                default='default.png', 
-                upload_to='', 
+                default="default.png",
+                upload_to="",
                 validators=[
                     django.core.validators.FileExtensionValidator(
-                        allowed_extensions=['png', 'jpg', 'jpeg'], 
-                        message='Extensão não suportada'
+                        allowed_extensions=["png", "jpg", "jpeg"],
+                        message="Extensão não suportada",
                     )
-                ], 
-                verbose_name='User Picture'),
+                ],
+                verbose_name="User Picture",
+            ),
         ),
     ]

@@ -12,7 +12,7 @@ class AccountAdmin(admin.ModelAdmin):
     list_display = ["username", "email", "last_login", "date_joined", "is_active"]
     readonly_fields = [
         "id",
-        "username", 
+        "username",
         "first_name",
         "last_name",
         "email",
@@ -28,7 +28,7 @@ class AccountAdmin(admin.ModelAdmin):
             {
                 "fields": [
                     "id",
-                    "username", 
+                    "username",
                     "first_name",
                     "last_name",
                     "email",

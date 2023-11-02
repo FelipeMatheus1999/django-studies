@@ -11,7 +11,7 @@ services:
   app:
     build: .
     env_file: .env
-    command: 
+    command:
       bash -c "python manage.py runserver 0.0.0.0:8000"
     stdin_open: true
     tty: true
@@ -24,4 +24,4 @@ services:
 
 volumes:
   pg_data:
-      driver: local 
+      driver: local

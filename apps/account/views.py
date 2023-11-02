@@ -1,6 +1,6 @@
 # Rest Framework
-from rest_framework.viewsets import GenericViewSet
 from rest_framework.mixins import CreateModelMixin
+from rest_framework.viewsets import GenericViewSet
 
 # Local
 from apps.account.models import AccountModel

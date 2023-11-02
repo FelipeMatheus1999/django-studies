@@ -41,3 +41,6 @@ shell:
 
 superuser:
 	sudo docker compose run app $(PYTHON_COMMAND) createsuperuser
+
+pre-commit:
+	pre-commit run --all-files
