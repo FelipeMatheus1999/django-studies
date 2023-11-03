@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   db:
-    image: postgres:12
+    image: postgres
     restart: always
     env_file: .env
     ports:
@@ -24,4 +24,4 @@ services:
 
 volumes:
   pg_data:
-      driver: local
+      external: true
