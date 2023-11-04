@@ -14,10 +14,5 @@ makefile
 __pycache__
 *.pyc
 
-# REQUIREMENTS
-dev.txt
-prod.txt
-test.txt
-
 # MEDIA
 /media
