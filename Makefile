@@ -28,19 +28,19 @@ compile:
 	pip-compile requirements/test.in
 
 migrations:
-	sudo docker compose run app $(PYTHON_COMMAND) makemigrations
+	sudo docker compose run api $(PYTHON_COMMAND) makemigrations
 
 migrate:
-	sudo docker compose run app $(PYTHON_COMMAND) migrate
+	sudo docker compose run api $(PYTHON_COMMAND) migrate
 
 bash:
 	sudo docker exec -it django-studies-app-1 /bin/sh
 
 shell:
-	sudo docker compose run app $(PYTHON_COMMAND) shell
+	sudo docker compose run api $(PYTHON_COMMAND) shell
 
 superuser:
-	sudo docker compose run app $(PYTHON_COMMAND) createsuperuser
+	sudo docker compose run api $(PYTHON_COMMAND) createsuperuser
 
 pre-commit:
 	pre-commit run --all-files
