@@ -7,8 +7,8 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - pg_data:/var/lib/postgresql/data
-  app:
+      - pg-data:/var/lib/postgresql/data
+  api:
     build: .
     env_file: .env
     command:
@@ -23,5 +23,5 @@ services:
       - db
 
 volumes:
-  pg_data:
+  pg-data:
       external: true
